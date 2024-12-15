@@ -1,20 +1,20 @@
 public class Giocatore {
-    int numero_giocatore;
+    //pensavo costruire ogni giocatore con nome e simbolo ovvio,in piu stavo pensando aggiungere 
+    //int numero giocatore perche il testo dice che poi dovrei scegliere a caso chi dei due inizia
+    //quindi pensavo estrarre random un numero tra 1 e 2 che indicherà poi quale giocatore inizia,
+    //se il giocatore 1 o 2,appena instanziamo i giocatore in automatico passiamo 1 o 2
+
+    
     String nome;
     char simbolo;
 
-    Giocatore(int number)
+    Giocatore(String name)
     {
-        this.numero_giocatore=number;
-    }
-    Giocatore(int number,String name)
-    {
-        this(number);
         this.nome=name;
     }
-    Giocatore(int number,String name,char symbol)
+    Giocatore(String name,char symbol)
     {
-        this(number,name);
+        this(name);
         this.simbolo=symbol;
     }
 
